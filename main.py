@@ -10,7 +10,7 @@ async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text
 
     if not url.startswith("http"):
-        return
+        return 
 
     msg = await update.message.reply_text(
         "🚀 جاري تحضير الفيديو بأعلى جودة للصوت والصورة..."
